@@ -1,9 +1,3 @@
-const TEXT_COLORS = {
-  black: "black",
-  orange: "orange",
-  red: "red",
-};
-
 var state = [...htmlElements];
 
 const startTimerBtn = document.querySelector(".start-timer");
@@ -31,22 +25,22 @@ function timer(seconds = 300) {
       clearInterval(interval);
     }
 
-    if (s < 45) {
-      renderTime(s, TEXT_COLORS.orange);
-    } else if (s < 15) {
-      renderTime(s, TEXT_COLORS.red);
-    } else {
-      renderTime(s);
-    }
+    renderTime(s);
 
     s -= 1;
   }, 1000);
 
-  function renderTime(seconds, color = TEXT_COLORS.black) {
+  function renderTime(seconds) {
+    const TEXT_COLORS = {
+      orange: "orange",
+      red: "red",
+    };
     const elem = document.querySelector(".timer > span");
 
-    if (color !== TEXT_COLORS.black) {
-      elem.style.color = color;
+    if (s <= 45 && s > 15) {
+      elem.style.color = TEXT_COLORS.orange;
+    } else if (s <= 15) {
+      elem.style.color = TEXT_COLORS.red;
     }
 
     elem.textContent = seconds;

@@ -2,10 +2,6 @@
   "name": "html-elements-bonanza",
   "version": "0.0.1",
   "description": "A game where you must name as many HTML elements as you can in the supplied amount of time",
-  "main": "index.html",
-  "scripts": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/srzvan/html-elements-bonanza.git"
@@ -19,5 +15,21 @@
   "bugs": {
     "url": "https://github.com/srzvan/html-elements-bonanza/issues"
   },
-  "homepage": "https://github.com/srzvan/html-elements-bonanza#readme"
+  "homepage": "https://github.com/srzvan/html-elements-bonanza#readme",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "test": "test"
+  },
+  "targets": {
+    "default": {
+      "source": "src/index.html",
+      "distDir": "./build"
+    }
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.0",
+    "parcel": "^2.4.0"
+  }
 }

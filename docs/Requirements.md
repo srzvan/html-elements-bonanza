@@ -2,6 +2,7 @@
 
 ## MVP
 
+- create Python scraper that navigates to [MDN HTML Element reference page](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), grabs all the elements from the _HTML elements_ list & populates the `htmlElementReference.json` file,
 - when the user starts the game, a timer is set in action
 - the game consists of submitting **HTML** element names using the keyboard
 - the game tracks the progress of the current session in the form of a percentage (no. of correct submissions / total no. of HTML elements)

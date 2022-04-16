@@ -8,3 +8,15 @@
 |          | PowerShell Core | $ /bin/Activate.ps1                     |
 | Windows  | cmd.exe         | C:\> \Scripts\activate.bat              |
 |          | PowerShell      | PS C:\> \Scripts\Activate.ps1           |
+
+## Deactivate virtual environment
+
+`deactivate`
+
+## Install dependencies
+
+`py -m pip install -r scraper/.venv/requirements.txt`
+
+## Run scraper from the virtual environment
+
+`py scraper/.venv/src/scraper.py`

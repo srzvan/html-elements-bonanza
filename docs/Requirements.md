@@ -10,7 +10,7 @@
   - the user chooses to forfeit the current session
   - the time runs out
   - or all the **HTML** elements have been submitted
-- resubmitting and element that was already submitted brings no penalty
+- resubmitting an element that was already submitted brings no penalty
 
 ## Nice to have
 
@@ -18,12 +18,12 @@
   - novice
   - intermediate
   - grandmaster
-- the current session progress percentage is broken down into four categories:
+- ❓ the current session progress percentage is broken down into four categories:
   - **experimental**
   - **deprecated**
   - **non-standard**
   - **standard**
-- the correct submissions should be tracked into four categories
+- ❓ the correct submissions should be tracked into four categories
   - **experimental**
   - **deprecated**
   - **non-standard**

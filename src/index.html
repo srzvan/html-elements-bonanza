@@ -12,16 +12,42 @@
 
 <body>
   <header>
-    <h1>HTML Elements Bonanza</h1>
+    <p><span class="tag">HTML</span> Elements Bonanza</p>
   </header>
 
   <main>
-    <h2>Flex your HTML knowledge</h2>
-    <p>Submit as many HTML element names as you can in the supplied amount of time</p>
+    <p>This is a game where you must name as many <span class="tag">HTML</span> elements (tags) as you can in the
+      supplied amount of time.
+      There are
+      3 levels of difficulty (novice, intermediate, grandmaster) that differ between them by the amount of time you have
+      to
+      flex your <span class="tag">HTML</span> knowledge.</p>
 
+    <button class="start">start</button>
     <input type="text" placeholder="HTML element name">
-    <p>Submit HTML element names using the <kbd>Enter</kbd> key</p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ducimus.
+    <p>Submit using the <kbd>Enter</kbd> key</p>
+
+    <div class="progress">
+      <p class="total"></p>
+      <div class="categories">
+        <p class="deprecated">
+          <img class="icon" src="./assets/delete_black_24dp.svg">
+          </img>
+        </p>
+        <p class="experimental">
+          <img class="icon" src="./assets/science_black_24dp.svg">
+          </img>
+        </p>
+        <p class="non-standard">
+          <img class="icon" src="./assets/warning_black_24dp.svg">
+          </img>
+        </p>
+        <p class="standard">
+          <img class="icon" src="./assets/html_black_24dp.svg">
+          </img>
+        </p>
+      </div>
+    </div>
   </main>
 
   <footer>

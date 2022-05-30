@@ -1,28 +1,63 @@
 @use "./reset" as *;
 
 body {
-  padding: 3.5rem 3.5rem 0 3.5rem;
+  padding-inline: 3.5rem;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
 header {
+  padding-block: 1rem;
+  border-bottom: 1px solid darkslategrey;
   margin-bottom: 1.5rem;
-  text-align: center;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 main {
-  max-width: 65ch;
-  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 input {
   padding: 0.5em 0.75em;
+  margin-bottom: 0.75rem;
   font-size: 1.5rem;
 }
 
 footer {
-  padding: 1rem;
+  padding-block: 1rem;
   text-align: center;
+}
+
+.tag {
+  &:before,
+  &:after {
+    display: inline-block;
+  }
+
+  &:before {
+    content: "<";
+    margin-right: 0.15em;
+  }
+
+  &:after {
+    content: "/>";
+    margin-left: 0.15em;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background-size: 14px;
+}
+
+.controls {
+  display: flex;
+  align-items: flex-start;
+}
+
+.start {
+  text-transform: uppercase;
 }

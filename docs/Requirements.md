@@ -5,12 +5,12 @@
 - create Python scraper that navigates to [MDN HTML Element reference page](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), grabs all the elements from the _HTML elements_ list & populates the `htmlElementReference.json` file,
 - when the user starts the game, a timer is set in action
 - the game consists of submitting **HTML** element names using the keyboard
+  - resubmitting an element that was already submitted brings no penalty
 - the game tracks the progress of the current session in the form of a percentage (no. of correct submissions / total no. of HTML elements)
 - the game stops if
   - the user chooses to forfeit the current session
   - the time runs out
   - or all the **HTML** elements have been submitted
-- resubmitting an element that was already submitted brings no penalty
 
 ## Nice to have
 
@@ -32,3 +32,4 @@
   - 100% - 50% green
   - 50% - 25% orange
   - 25% - 0% red
+- accessibility

@@ -55,7 +55,7 @@ def populate_category_list(list, soup_element):
             list.append(category)
 
 def write_to_json(data):
-    with open('../../../json/data.json', 'w') as json_file:
+    with open('../../../json/htmlElementReference.json', 'w') as json_file:
         json.dump(data, json_file, indent=2)
 
 write_to_json(scraper())

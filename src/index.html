@@ -11,23 +11,32 @@
 </head>
 
 <body>
+
   <header>
-    <p><span class="tag">HTML</span> Elements Bonanza</p>
+    <h1><span class="tag">HTML</span> Elements Bonanza</h1>
+    <p>This is a game where you must name as many <span class="tag">HTML</span> elements (tags) as you can in the
+      supplied amount of time.
+    </p>
+    <p>There are
+      3 levels of difficulty (novice, intermediate, grandmaster) that differ between them by the amount of time you
+      have
+      to
+      flex your <span class="tag">HTML</span> knowledge.</p>
   </header>
 
   <main>
-    <p>This is a game where you must name as many <span class="tag">HTML</span> elements (tags) as you can in the
-      supplied amount of time.
-      There are
-      3 levels of difficulty (novice, intermediate, grandmaster) that differ between them by the amount of time you have
-      to
-      flex your <span class="tag">HTML</span> knowledge.</p>
+    <section class="start">
+      <p class="timer">5:00</p>
+      <button name="start-button">start</button>
+    </section>
 
-    <button class="start">start</button>
-    <input type="text" placeholder="HTML element name">
-    <p>Submit using the <kbd>Enter</kbd> key</p>
 
-    <div class="progress">
+
+    <section class="game hidden">
+      <input type="text" placeholder="HTML element name">
+      <p>Submit using the <kbd>Enter</kbd> key</p>
+
+      <h2>Percentage progress</h2>
       <p class="total"></p>
       <div class="categories">
         <p class="deprecated">
@@ -47,12 +56,14 @@
           </img>
         </p>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer>
     <p>Created with <span role="img">❤️</span> by Răzvan Sbîngu</p>
   </footer>
+
+  <script src="./main.js"></script>
 </body>
 
 </html>

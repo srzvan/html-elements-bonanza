@@ -15,8 +15,8 @@
 
 ## Install dependencies
 
-`py -m pip install -r scraper/.venv/requirements.txt`
+`py -m pip install -r .venv/requirements.txt`
 
 ## Run scraper from the virtual environment
 
-`py scraper/.venv/src/scraper.py`
+`py .venv/src/scraper.py`
